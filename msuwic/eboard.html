@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MSU Women in Computing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="assets/images/logos/icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="assets/js/wic.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</head>
+
+<body onload="eboardInitial()">
+
+    <!-- Navigation Bar -->
+
+    <div class="navbar navbar-default navbar-inverse navbar-fixed-top nav-menu" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-header">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="nav-wic" href="./">
+                    <img class="nav-logo" src="assets/images/logos/new_icon.png" alt="WIC logo" height="300"
+                        width="300">
+                </a>
+                <a class="nav-wic" href="./">MSU Women In Computing</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main-header">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button">About Us <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="eboard.html">E-Board</a>
+                            </li>
+                            <li>
+                                <a href="sponsors.html">Our Sponsors</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button">Get Involved
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="outreach.html">Outreach</a>
+                            </li>
+                            <li>
+                                <a href="http://www.spartangwc.org" target="_blank">Girls Who Code</a>
+                            </li>
+                            <li>
+                                <a href="http://technovation.cse.msu.edu" target="_blank">Technovation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="alumni.html">Alumni</a>
+                    </li>
+                    <li>
+                        <a class="nav-link nav-link-last" href="join.html">Join</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eboard -->
+
+    <div id="eboard" class="eboard">
+        <div class="container">
+            <div class="eboard-header">
+                <h2 class="eboard-title">Women in Computing E-Board</h2>
+                <h3 class="eboard-year">2021-2022</h3>
+                <h6 class="subheading eboard-descr">This year's E-Board is very excited to
+                    provide a support network for women in computing fields at
+                    Michigan State, and we hope you will join us in our mission to
+                    empower and encourage young women to discover a love for computing.</h6>
+                <h6 class="subheading">Please contact us if you have any questions!</h6>
+                <a href="mailto:msuwic@cse.msu.edu" class="btn btn-spartan wic-btn-sm">Contact our advisors</a>
+            </div>
+
+            <!-- Position Sidebar -->
+
+            <div class="col-md-3 eboard-position-links">
+                <h4 class="positions-title">Positions</h4>
+                <hr class="below-positions">
+                <ul class="nav">
+                    <li id="president" class="position" onclick="selectEboard('president')">President</li>
+                    <hr>
+                    <li id="vice-president" class="position" onclick="selectEboard('vice-president')">Vice President
+                    </li>
+                    <hr>
+                    <li id="treasurer" class="position" onclick="selectEboard('treasurer')">Treasurer</li>
+                    <hr>
+                    <li id="secretary" class="position" onclick="selectEboard('secretary')">Secretary</li>
+                    <hr>
+                    <li id="outreach-chair" class="position" onclick="selectEboard('outreach-chair')">Outreach Chair
+                    </li>
+                    <hr>
+                    <li id="corporate-relations" class="position" onclick="selectEboard('corporate-relations')">
+                        Corporate Relations</li>
+                    <hr>
+                    <li id="webmaster" class="position" onclick="selectEboard('webmaster')">Webmaster</li>
+                    <hr>
+                    <li id="lean-in-chair" class="position" onclick="selectEboard('lean-in-chair')">Lean In Chair</li>
+                    <hr>
+                    <li id="social-chair" class="position" onclick="selectEboard('social-chair')">Social Chair</li>
+                    <hr>
+                    <li id="community-relations" class="position" onclick="selectEboard('community-relations')">
+                        Community Relations</li>
+                    <hr>
+                    <li id="social-media" class="position" onclick="selectEboard('social-media')">
+                            Social Media Manager</li>
+                    <hr>
+                </ul>
+            </div>
+
+            <!-- Eboard Position Info -->
+
+            <!-- President -->
+
+            <div class="col-md-9 eboard-positions">
+                <div class="profile" id="president-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/SophieMartin.jpg">
+                        <p class="eboard-name">Sophie Martin</p>
+                        <p class="eboard-major">Computer Science '22</p>
+                        <a class="eboard-contact" href="mailto:wic-pres@cse.msu.edu">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                        <a class="eboard-contact" href="https://www.linkedin.com/in/sophiemmartin/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">President</p>
+                        <div class="eboard-bio">
+                            <p>Hey everyone! My name is Sophie Martin and I am a senior studying Computer Science at MSU, and this year's President! 
+                                My computer science interests include frontend web development and UI/UX design. Outside of WIC, I am a ULA for CSE 231, 
+                                an ambassador for Women in Engineering K-12 Outreach & Recruitment, and a mentor for Girls Who Code. I have also had the 
+                                opportunity to intern for Cigna Healthcare for two years. In my free time I enjoy finding new restaurants and coffee shops to try, 
+                                and I love attending MSU sports!</p>
+                            <p>As President, I want to continue to provide support to women in computing fields and allow our club to be a safe space 
+                                for people interested in CS! I have been a member of WIC since my freshman year, and I have made some of my closest friends 
+                                through it and very much value all the time I have spent with this organization. Always feel free to reach out to me - I love talking 
+                                about my experiences at MSU and answering any questions regarding WIC! Hope to see you at our meetings this year, Go Green!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vice President -->
+
+                <div class="profile" id="vice-president-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/Samantha.jpg"> 
+                        <p class="eboard-name">Samantha Sebestyen</p>
+                        <p class="eboard-major">Computer Science '23</p>
+                        <a class="eboard-contact" href="mailto:wic-vp@cse.msu.edu">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                        <a class="eboard-contact" href="https://www.linkedin.com/in/samanthasebestyen" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Vice President</p>
+                        <div class="eboard-bio">
+                            <p>Hello! I am Samantha Sebestyen and I am serving as the WIC Vice President this year. I am a junior at MSU as a Computer Science major with a Media & Information cognate as well as a minor in Media Photography. 
+                                I am currently interested in UI/UX and web development. This is my third year involved in WIC, but I also take part in the Women in Engineering program here at MSU. It is so inspiring to see people come together to lift up women in the STEM field, and I love the community that WIC fosters.
+                                In my free time, I love to attend MSU basketball and hockey games, read, and bake lots of dessert. This year I’ll be working as an undergraduate learning assistant for CSE 102 as well as working at the athletics broadcasting studio Spartan Vision as a student producer. 
+                                I hope to use my skills to improve our communication with prospective and current members, support our leadership, and look forward to meeting any and all who come to the WIC meetings!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treasurer -->
+
+                <div class="profile" id="treasurer-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/Liz.jpg">
+                        <p class="eboard-name">Elizabeth DeBack</p>
+                        <p class="eboard-major">Computer Science '22</p>
+                        <a class="eboard-contact" href="mailto:wic-treasurer@cse.msu.edu">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                        <a class="eboard-contact" href="https://www.linkedin.com/in/edeback/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Treasurer</p>
+                        <div class="eboard-bio">
+                            <p>Elizabeth is a fourth year CSE student with a minor in Economics. Outside of WIC, Elizabeth has been involved in Phi Sigma Rho Engineering Sorority and Spartan Girls Who Code. She is passionate about outreach with regards to tech. 
+                                Elizabeth has had internships with Steelcase Inc. and Deloitte and Touche. She has found that she is 
+                                most passionate about solving complex business problems with technology and digital transformation. Please do not hesitate to reach out to Elizabeth if you would like to connect on student life, advisory consulting, classes, etc.! </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secretary -->
+
+                <div class="profile" id="secretary-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/GabbyLovett.jpg">
+                        <p class="eboard-name">Gabrielle Lovett</p>
+                        <p class="eboard-major">Computer Science '23</p>
+                        <a class="eboard-contact" href="https://www.linkedin.com/in/gabrielle-ann-lovett-b28b661b6/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Secretary</p>
+                        <div class="eboard-bio">
+                            <p>In my free time, I like to paint, read and play video games. With that in mind, I hope to work on game development when I graduate. Some things I really enjoy about MSU are the football games, the clubs I’m a part of and all of 
+                                south neighborhood. I’m excited this year to connect with more people in my field and go to more events on campus. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outreach Chair -->
+
+                <div class="profile" id="outreach-chair-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/tatiana.jpg">
+                        <p class="eboard-name">Tatiana Voegerl</p>                        </p>
+                        <p class="eboard-major">Computer Science & <br> Information Science '24</p>
+                        <a class="eboard-contact" href="mailto:wic-outreach@cse.msu.edu">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Outreach Chair</p>
+                        <div class="eboard-bio">
+                            <p>Hi everyone! My name is Tatiana and I am the Outreach Chair for WIC. I am passionate 
+                                about working with my community, so I am very excited to have this position! As Outreach
+                                 Chair, I hope to encourage more women and members of other underrepresented groups to
+                                  pursue a career in computer science. I am also involved in the Spartan Girls Who Code
+                                   program as a mentor and hope to do more outreach in the future. 
+                            </p>
+                            <p>Here is a little more about me: I am currently a second-year pursuing a double major in 
+                                Computer Science and Information Science with a Spanish minor. My technical interest 
+                                lies in software development and I hope to become a full-stack developer in order to 
+                                combine technical skills with creativity. This semester you will find me studying, exploring 
+                                campus, and reading! Please reach out to me if you have any questions!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Relations -->
+
+                <div class="profile" id="corporate-relations-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/AnnaParkinson.jpg">
+                        <p class="eboard-name">Anna Parkinson</p>
+                        <p class="eboard-major">Computer Science '22</p>
+                        <a class="eboard-contact" href="mailto:wic-corporate@cse.msu.edu">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                        <a class="eboard-contact" href="https://www.linkedin.com/in/anna-parkinson-945245185" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Corporate Relations Chair</p>
+                        <div class="eboard-bio">
+                            <p>Hello World! My name is Anna and I’m a 4th year student studying Computer Science & Engineering with minors in Japanese and Computational 
+                                Mathematics Science and Engineering (CMSE). I’m so excited to be WIC’s Corporate Relations Chair this year because in the past the tech talks WIC 
+                                host are always incredible and now it is my job to help organize them!!</p>
+                                <p> While I’m involved with WIC, I’m also a part of Phi Sigma Rho Sorority for 
+                                Women in Engineering and Technology, MSU Intercollegiate Figure Skating Team, and MSU Synchronized Skating Team. My favorite thing about Computer 
+                                Science is utilizing my problem solving skills and incorporating my personal interests in tech! I have interests in Natural Language Processing, 
+                                Voice Recognition, and Data Analytics. Some of my hobbies include learning new languages, reading, & playing games with my friends :) I can’t wait to 
+                                have great food and tech talks with everyone this school year!! </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webmaster -->
+
+                <div class="profile" id="webmaster-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/Gigi.jpg">
+                        <p class="eboard-name">Gigi Padalec</p>
+                        <p class="eboard-major">Computer Science '22</p>
+                        <a class="eboard-contact" href="mailto:padalecg@msu.edu">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                        <a class="eboard-contact" href="https://www.linkedin.com/in/gigi-padalec-808110164/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Webmaster</p>
+                        <div class="eboard-bio">
+                            <p>Hi everyone!!!! My name is Gigi Padalec and I’m the current Webmaster! I’m a senior at MSU majoring in 
+                                Computer Science. I chose to major in CSE because I enjoy solving puzzles and love the feeling of figuring problems out. I’m so excited to join eboard this year. I look forward to 
+                                meeting and collaborating with everyone this upcoming school year!
+                            </p>
+                            <p>Outside of WIC, I’m a Women In Engineering ambassador for K-12 Outreach & Recruitment, lead mentor for Girls Who Code/Technovation, and  ULA for CSE 102. I’ve also have had the privilege to intern at 
+                                Target as a backend software engineer. When I have free time, you can find me at the nearest coffee shop listening to music and studying, reading a book in the park, or glued to my switch 
+                                working on my Animal Crossing island. I am also a member of Phi Sigma Rho, engineering sorority.</p>    
+                            <p>
+                                If you have any question or are looking for a friend, feel free to reach out to me!
+                            </p>                 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lean In Chair -->
+
+                <div class="profile" id="lean-in-chair-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/hannahDale.jpg">
+                        <p class="eboard-name">Hannah Dale</p>
+                        <p class="eboard-major">Computer Science '22</p>
+                        <a class="eboard-contact" href="www.linkedin.com/in/hannah-dale-4ba6a9219" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Lean In Chair</p>
+                        <div class="eboard-bio">
+                            <p>Hi I'm Hannah and I'm a CSE major w/ a French minor. My interest in computer science started off with cyber security but has shifted to software / web development as well. This is my second year on the e-board. As this year's Lean In Chair, I hope to connect our members and create conversations. After an isolating couple pandemic semesters, it's more important now than ever. I look forward to working with everyone to create an environment where everyone feels heard and supported within WIC! 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Chair -->
+
+                <div class="profile" id="social-chair-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/Harika.jpg">
+                        <p class="eboard-name">Harika Gatla</p>
+                        <p class="eboard-major">Computer Science '24</p>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Social Chair</p>
+                        <div class="eboard-bio">
+                            <p>Hi! I’m Harika, a sophomore here at MSU. I was online all through freshman year and extremely excited to be able to stay on 
+                                campus starting this semester. I cannot wait to explore campus soon before classes begin. I love music, art and dance. My career 
+                                goal is to either work for a start up or Google. I joined WIC last semester while looking for a group people with similar interests 
+                                and a supportive environment. I hope to open up WIC to more people by organizing fun events where others can learn about this awesome club!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Manager --> 
+
+                <div class="profile" id="social-media-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/kirsten.jpeg">
+                        <p class="eboard-name">Kirsten Gross</p>
+                        <p class="eboard-major">Computer Science '23</p>
+                        <a class="eboard-contact" href="https://www.linkedin.com/in/kirsten-gross-6624031b8/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Social Media Manager</p>
+                        <div class="eboard-bio">
+                            <p>Hey, I'm Kirsten Gross! I am a Junior pursuing a Bachelors degree in Computer Science with a cognate in 
+                                Business. As Social Media Manager, I will help keep our members in the loop about all the fun and exciting 
+                                things WIC does! I chose to study Computer Science because I love to use think creatively to solve problems 
+                                and work as a team. WIC has opened my eyes to the versatility of Computer Science and has provided me with 
+                                a great network of people, so I can't wait to give back to WIC again this year after having such a great time 
+                                as Social Chair last year. When I am not doing something CS related, I like to play tennis, travel, and explore new parts of campus!
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Community Relations -->
+
+                <div class="profile" id="community-relations-content">
+                    <div class="col-sm-4 eboard-photo">
+                        <img src="assets/images/eboard/AnnaCatenacci.jpg">
+                        <!-- <img src="assets/images/eboard/Melanie.JPG"> -->
+                        <p class="eboard-name">Anna Catenacci</p>
+                        <p class="eboard-major">Computer Science '23</p>
+                        <a class="eboard-contact" href="https://www.linkedin.com/in/anna-catenacci/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 eboard-info">
+                        <p class="eboard-position">Community Relations Chair</p>
+                        <div class="eboard-bio">
+                            <p> Hi everyone! I am Anna Catenacci, and I am the filling the WIC Community Relations position this year. I am a junior studying Computer Science at MSU with a cognate in Science, Technology, and 
+                                Public Policy (STEPPS). I chose Computer Science as my major because of the creativity and variety it allows, and STEPPS as my cognate, because I am incredibly interested in the environment and 
+                                how we view it. In my free time, you would most likely find me reading, painting, or going on a run. I'd like to start journaling this year, and I love to spend time finding artistic things to do. 
+                            </p>
+                            <p>I joined WIC during the pandemic, while we were still having meetings over Zoom. I am so excited to see everyone in person this year, as well as to meet all of our new members! It has been inspiring 
+                                to have a supportive community of similar people throughout the year. Please don't hesitate to reach out to me if you're considering joining WIC, or have any other questions--I would love to talk to you!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIC Extra Mile Leadership Award -->
+
+    <div id="extra-mile" class="extra-mile">
+        <div class="section">
+            <h2>WIC Extra Mile Leadership Award</h2>
+            <p>The WIC Extra Mile Leadership Award is given each year to a member of the WIC Executive Board whose
+                outstanding leadership in the last year has contributed towards improving the club.
+                The WIC President and WIC Vice President nominate an awardee, who must be approved by the WIC Advisors.
+                The WIC President, WIC Vice President, previous EMLA recipients, and students
+                who could graduate in the current academic year are ineligible. The purpose of the award is to recognize
+                outstanding leaders and encourage them to run for other leadership positions
+                in the coming years.</p>
+            <button id="winnersaccord" class="accordion">Past Winners<span id="emla-arrow"
+                    class="caret caret-up"></span></button>
+            <div id="panel-accord" class="panel">
+                <div class="winners">
+                    <p>2010 - Meghan McNeil</p>
+                    <p>2011 - Cassi Miller & Kathryn Bonnen</p>
+                    <p>2012 - Mairin Chesney</p>
+                    <p>2013 - Chelsea Carr & Kaitlin Davis</p>
+                    <p>2014 - Ashlee Deline</p>
+                    <p>2015 - Neha Gupta</p>
+                    <p>2016 - Courtney Irwin</p>
+                    <p>2017 - Lauren Allswede</p>
+                    <p>2018 - Harshita Das</p>
+                    <p>2019 - Camille Emig & Sarah Johanknecht</p>
+                    <p>2020 - Zosha Korzecke</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-container">
+            <a class="footer-social" href="https://www.facebook.com/MSUWomenInComputing/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="footer-social" href="mailto:msuwic@cse.msu.edu">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a class="footer-social" href="https://www.instagram.com/wicmsu/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <p>Michigan State University Women in Computing</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/eboard.js"></script>
+
+</body>
+
+</html>
