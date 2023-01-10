@@ -50,8 +50,8 @@ p {
 }
 
 .btn-spartan:hover {
-    /*background-color: #939393;*/
-    background-color: var(--green);
+    background-color: var(--light-green);
+    color: var(--dark-green);
 }
 
 .wic-btn {
@@ -68,7 +68,7 @@ p {
 /* Navigation */
 
 .nav-menu {
-    background-color: #18453b;
+    background-color: var(--dark-green);
     box-shadow: 0 0.15em 0.15em rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
@@ -108,7 +108,7 @@ p {
 }
 
 .nav-link:hover, .nav-wic:hover {
-    color: #939393;
+    color: var(--light-green);
 }
 
 .nav-link-last {
@@ -128,11 +128,11 @@ p {
     text-align: center;
 }
 
-.corona {
+/* .corona {
     text-align: center;
     color: red;
     padding-bottom: 2em;
-}
+} */
 
 .msuwic-title {
     margin: 6.8em 0 4.3em 0;
@@ -167,7 +167,7 @@ p {
 }
 
 .button {
-    background: #18453b;
+    background: var(--dark-green);
     border-radius: 0.3em;
     color: white;
     padding: 0.9em;
@@ -180,7 +180,7 @@ p {
 }
 
 .subscribe:hover {
-    background-color: #abdda4;
+    background-color: var(--light-green);
     color: var(--dark-green);
 }
 
@@ -204,7 +204,7 @@ p {
 /* Home page - about us */
 
 .about {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 5em 16em 2em;
 }
 
@@ -218,7 +218,7 @@ p {
 
 .meeting-bit i {
     font-size: 2em;
-    color: #18453b;
+    color: var(--dark-green);
     margin: 0 0.3em 0 0.6em;
     vertical-align: middle;
 }
@@ -258,7 +258,7 @@ p {
 }
 
 .activities {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 3em 0 1em 0;
 }
 
@@ -282,11 +282,11 @@ p {
 }
 
 .page-link {
-    color: #18453b;
+    color: var(--dark-green);
 }
 
 .page-link:hover {
-    color: #888;
+    color: var(--light-green);
 }
 
 .activity-descr {
@@ -301,7 +301,7 @@ p {
 }
 
 .affiliated-orgs {
-    color: #18453b;
+    color: var(--dark-green);
 }
 
 .affiliated-orgs .affiliated-logos {
@@ -317,7 +317,7 @@ p {
 /* Eboard page - eboard */
 
 .eboard {
-    color: #18453b;
+    color: var(--dark-green);
     width: 100%;
     padding: 8em 9em 3em;
 }
@@ -396,7 +396,7 @@ p {
 }
 
 .eboard-contact:hover {
-    color: #18453b;
+    color: var(--dark-green);
 }
 
 .eboard-info {
@@ -415,7 +415,7 @@ p {
 /* Eboard page - Extra Mile Award */
 
 .extra-mile {
-    background-color: #18453b;
+    background-color: var(--dark-green);
     color: white;
     padding: 1em 9em 3em;
     width: 100%;
@@ -426,7 +426,7 @@ p {
 }
 
 .extra-mile .accordion {
-    background-color: #18453b;
+    background-color: var(--dark-green);
     padding-bottom: 1em;
     padding-top: 1em;
     font-size: 2em;
@@ -440,7 +440,7 @@ p {
 }
 
 .accordion:hover {
-    color: #939393;
+    color: var(--light-green);
 }
 
 #emla-arrow, #sponsor-arrow {
@@ -475,7 +475,7 @@ p {
 }
 
 .sponsor-level {
-    border-bottom: 0.07em solid #F34A53;
+    border-bottom: 0.07em solid var(--pink);
     color: #939393;
     margin-top: 0.5em;
     font-size: 2em;
@@ -500,6 +500,7 @@ p {
 .logo {
      margin: 0 1.5em 3em 1.5em;
 }
+
 /*.logo2{
     margin: 0 1.5em 3em 1.5em;
     width: 120px;
@@ -581,12 +582,12 @@ p {
 
 .sponsor-thank-you {
     color: white;
-    background-color: #18453b;
+    background-color: var(--dark-green);
     padding: 0.5em 9em 0;
 }
 
 .sponsor-accord {
-    background-color: #18453b;
+    background-color: var(--dark-green);
     color: white;
     font-size: 2.5em;
     font-weight: 600;
@@ -605,7 +606,7 @@ p {
 
 .become-sponsor {
     background-color: white;
-    color: #18453b;
+    color: var(--dark-green);
     padding: 2.9em 9em;
 }
 
@@ -618,7 +619,7 @@ p {
 }
 
 .contact-mail {
-    color: #F34A53;
+    color: var(--pink);
     font-size: 1.1em;
 }
 
@@ -629,7 +630,7 @@ p {
 /* Outreach */
 
 .outreach {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 8em 7.3em 3em;
 }
 
@@ -668,7 +669,7 @@ p {
 /* News page - news */
 
 .news {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 8em 0.5em 1em;
 }
 
@@ -707,7 +708,7 @@ p {
 /* News page - list of posts */
 
 .news-all {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 8em 9em 1em;
 }
 
@@ -717,7 +718,7 @@ p {
 }
 
 .news-author {
-    color: #18453b;
+    color: var(--dark-green);
     margin-bottom: 0;
     font-size: 1.15em;
     font-weight: bold;
@@ -733,7 +734,7 @@ p {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.75em;
-    color: #18453b;
+    color: var(--dark-green);
 }
 
 .post {
@@ -743,7 +744,7 @@ p {
 /* News page - news post */
 
 .news-post {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 8em 22em 1em;
     text-align: left;
 }
@@ -775,7 +776,7 @@ p {
 }
 
 .back-page:hover {
-    color: #18453b;
+    color: var(--dark-green);
 }
 
 .icon-back {
@@ -785,7 +786,7 @@ p {
 /* News page - WIC BITS */
 
 .wicbits {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 0 9em 4em;
 }
 
@@ -805,7 +806,7 @@ p {
 /* Past Wic Bits */
 
 .past-wicbits {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 8em 9em 4em;
 }
 
@@ -814,7 +815,7 @@ p {
 }
 
 .wicbits-year {
-    color: #18453b;
+    color: var(--dark-green);
     display: block;
     margin: 1.1em 0;
     font-size: 1.7em;
@@ -827,12 +828,12 @@ p {
 /* Individual WICBITS page */
 
 .wicbits-page {
-    color: #18453b;
+    color: var(--dark-green);
     padding: 8em 9em 4em;
 }
 
 .wicbits-file {
-    color: #18453b;
+    color: var(--dark-green);
     display: block;
     font-size: 1.5em;
     margin: 0.1em 0;
@@ -862,7 +863,7 @@ p {
 
 .events {
     background-color: white;
-    color: #18453b;
+    color: var(--dark-green);
 }
 
 .events {
@@ -881,7 +882,7 @@ p {
 }
 
 .down-arrow {
-    color: #18453b;
+    color: var(--dark-green);
 }
 
 .down-arrow:hover {
@@ -893,7 +894,7 @@ p {
 .calendar {
     padding: 5em 9em 3em;
     width: 100%;
-    background-color: #18453b;
+    background-color: var(--dark-green);
     color: white;
 }
 
@@ -914,7 +915,7 @@ iframe {
 .alumni {
     width: 100%;
     padding: 8em 9em 3em;
-    color: #18453b;
+    color: var(--dark-green);
 }
 
 .alumni-year {
@@ -987,7 +988,7 @@ iframe {
 /* Join */
 
 .join-us {
-    color: #18453b;
+    color: var(--dark-green);
     width: 100%;
     padding: 8em 9em 3em;
 }
@@ -1024,7 +1025,7 @@ iframe {
 }
 
 .social-join:hover {
-    background-color: #18453b;
+    background-color: var(--dark-green);
 }
 
 /* Footer */
@@ -1051,7 +1052,7 @@ footer {
 }
 
 .footer-social:hover {
-    background-color: #18453b;
+    background-color: var(--dark-green);
     color: white;
 }
 
@@ -1150,7 +1151,7 @@ footer p {
     /* Home page - about us */
 
     .about {
-        color: #18453b;
+        color: var(--dark-green);
         padding: 0em 0em 0em;
     }
 
