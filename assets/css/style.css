@@ -1,3 +1,16 @@
+/* Color Variables */
+:root {
+    --dark-pink: #ab4248;
+    --pink: #f55e61;
+    --light-pink: #ffb3b4;
+    --dark-blue: #5a77bb;
+    --blue: #789df6;
+    --light-blue: #b6cbff;
+    --dark-green: #18453b;
+    --green: #008037;
+    --light-green: #abdda4;
+}
+
 /* General */
 
 body {
@@ -32,12 +45,13 @@ p {
 /* Buttons */
 
 .btn-spartan {
-    background-color: #18453b;
+    background-color: var(--dark-green);
     color: white;
 }
 
 .btn-spartan:hover {
-    background-color: #939393;
+    /*background-color: #939393;*/
+    background-color: var(--green);
 }
 
 .wic-btn {
@@ -68,7 +82,7 @@ p {
 .navbar
 
 .navbar-header {
-    padding-top: 0.8em;
+    padding-top: 1.2em;
 }
 
 .nav-wic {
@@ -81,6 +95,7 @@ p {
 .nav-logo {
     height: 1.8em;
     margin: 0.15em 0.4em;
+    margin-bottom: -0.2em;
     width: 1.9em;
     vertical-align: bottom;
 }
@@ -165,24 +180,25 @@ p {
 }
 
 .subscribe:hover {
-    background-color: #939393;
+    background-color: var(--light-green);
+    color: var(--dark-green);
 }
 
 .social-media {
     margin-top: 3.7em;
 }
 
-.facebook, .email {
+.facebook, .email, .instagram {
     color: white;
     margin: 0 0.8em;
 }
 
-.facebook i, .email i {
+.facebook i, .email i, .instagram i {
     font-size: 3em;
 }
 
-.facebook:hover, .email:hover {
-    color: #939393;
+.facebook:hover, .email:hover, .instagram:hover {
+    color: var(--light-green);
 }
 
 /* Home page - about us */
