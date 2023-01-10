@@ -180,7 +180,7 @@ p {
 }
 
 .subscribe:hover {
-    background-color: var(--light-green);
+    background-color: #abdda4;
     color: var(--dark-green);
 }
 
