@@ -36,7 +36,7 @@ function show_eboard_content(id) {
 }
 
 function alumniInitial() {
-    selectAlumni('2122')
+    selectAlumni('2223')
 }
 
 function selectAlumni(id) {
@@ -46,7 +46,7 @@ function selectAlumni(id) {
 }
 
 function unselect_all_alumni_nav(id) {
-    var nav = ['1819', '1718', '1617', '1516', '1415', '1314', '1213','1920','2021', '2122'];
+    var nav = ['1819', '1718', '1617', '1516', '1415', '1314', '1213','1920','2021', '2122', '2223'];
     for (var i = 0; i < nav.length; i++) {
         if (nav[i] != id) {
             document.getElementById(nav[i]).style.fontWeight = "400";
@@ -55,7 +55,7 @@ function unselect_all_alumni_nav(id) {
 }
 
 function show_alumni_content(id) {
-    var nav = ['1819', '1718', '1617', '1516', '1415', '1314', '1213', '1920','2021', '2122'];
+    var nav = ['1819', '1718', '1617', '1516', '1415', '1314', '1213', '1920','2021', '2122', '2223'];
     var content = id + "-content";
     for (var i = 0; i < nav.length; i++) {
         var currContent = nav[i] + "-content";
