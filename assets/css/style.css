@@ -3,11 +3,11 @@
     --dark-pink: #ab4248;
     --pink: #f55e61;
     --light-pink: #ffb3b4;
-    --dark-blue: #5a77bb;
-    --blue: #789df6;
-    --light-blue: #b6cbff;
-    --dark-green: #18453b;
-    --green: #008037;
+    --dark-blue: #4d3880;
+    --blue: #917ac3;
+    --light-blue: #c3edef;
+    --dark-green: #4d3880;
+    --green: #c8f2ad;
     --light-green: #abdda4;
 }
 
@@ -87,6 +87,7 @@ p {
 
 .nav-wic {
     color: white;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: 1.18em;
     text-transform: uppercase;
     vertical-align: super;
@@ -206,6 +207,7 @@ p {
 .about {
     color: var(--dark-green);
     padding: 5em 16em 2em;
+    max-width: 100%;
 }
 
 .about p {
@@ -225,6 +227,18 @@ p {
 
 .meeting-text {
     font-size: 1.4em;
+}
+/* Media queries for mobile devices */
+
+/* For smaller screens (max-width: 600px) */
+@media (max-width: 600px) {
+    .about {
+        padding: 6em 2em 15em; /* Adjusted padding for mobile screens */
+    }
+
+    .meeting-text {
+        font-size: 5em 2em; /* Slightly smaller font size for better readability */
+    }
 }
 
 /* Home page - photo slideshow */
@@ -458,6 +472,122 @@ p {
     margin: .375em 0;
 }
 
+@media (max-width: 600px) {
+    .extra-mile {
+        padding: 1em 2em 2em; /* Reduce padding on smaller screens */
+    }
+
+    .extra-mile h2 {
+        font-size: 1.5em; /* Adjust heading size for mobile */
+        margin-top: 1em; /* Reduce top margin */
+        text-align: center; /* Center the heading for better readability */
+    }
+
+    .extra-mile .accordion {
+        font-size: 1.3em; /* Reduce accordion font size for mobile */
+        padding-top: 0.7em; /* Adjust padding for mobile */
+        padding-bottom: 0.7em; /* Adjust padding for mobile */
+    }
+
+    .accordion {
+        font-size: 1.1em; /* Slightly smaller font for buttons */
+    }
+
+    .extra-mile .winners p {
+        font-size: 1em; /* Adjust font size for the winner list */
+        margin: 0.2em 0; /* Slightly reduce margins for spacing */
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+
+/* Tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .eboard {
+        padding: 7em; /* Reduce padding */
+    }
+
+    .eboard-header {
+        margin-bottom: 10em; /* Reduce margin */
+    }
+
+    .eboard-title {
+        font-size: 10em; /* Reduce heading size */
+        text-align: center; /* Center heading */
+    }
+
+    .eboard-year {
+        font-size: 1.5em; /* Adjust year font size */
+        text-align: center; /* Center the year */
+    }
+
+    .eboard-descr {
+        margin: 0 2em;
+        font-size: 1.1em;
+    }
+
+    .eboard-positions {
+        text-align: center;
+    }
+
+    .profile img {
+        width: 10em; /* Reduce image size */
+    }
+
+    .eboard-name {
+        font-size: 1.2em; /* Adjust font size */
+    }
+
+    .eboard-info {
+        text-align: center; /* Center the text */
+    }
+
+    .eboard-position {
+        font-size: 1.3em; /* Adjust position title size */
+    }
+}
+
+/* For smaller devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .eboard {
+        padding: 3em 1em; /* Further reduce padding */
+    }
+
+    .eboard-title {
+        font-size: 2em; /* Further reduce heading size */
+        margin-top: 1em;
+    }
+
+    .eboard-year {
+        font-size: 1.3em;
+    }
+
+    .eboard-descr {
+        font-size: 1.2em; /* Adjust description font size */
+    }
+
+    .profile img {
+        width: 8em; /* Smaller image for mobile */
+    }
+
+    .eboard-info {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .eboard-position {
+        font-size: 1.2em;
+    }
+}
+
+/* Footer adjustment for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        padding: 2em 1em;
+        text-align: center;
+    }
+}
+
 /* Sponsor page - Our Sponsors */
 
 .sponsors {
@@ -625,6 +755,93 @@ p {
 
 .contact-mail:hover {
     color: #939393;
+}
+@media (max-width: 600px) {
+    /* General adjustments for mobile */
+    .sponsors {
+        padding: 3em 1.5em 1em; /* Reduce padding for smaller screens */
+    }
+
+    .sponsor-header {
+        margin-bottom: 0.35em;
+        text-align: center; /* Center-align for better readability */
+    }
+
+    .sponsor-year {
+        font-size: 1.5em; /* Reduce font size */
+        margin-bottom: 1em;
+        text-align: center; /* Center-align */
+    }
+
+    .sponsor-level {
+        font-size: 1.3em; /* Adjust font size */
+        margin-top: 0.5em;
+        text-align: center; /* Center-align */
+    }
+
+    .sponsor-section {
+        flex-direction: column; /* Ensure content is stacked vertically */
+        padding: 2em 0; /* Add some padding */
+    }
+
+    .sponsor-logos {
+        flex-direction: column; /* Stack logos vertically */
+        align-items: center; /* Center the logos */
+    }
+
+    .logo {
+        margin: 1.5em 0; /* Add margin for separation between logos */
+        width: 8em; /* Adjust logo width for smaller screens */
+    }
+
+    /* Adjust specific logo sizes for mobile */
+    #gm, #elektrobit, #deltaDental, #generalMills, #vertafore, #crowe, #broad {
+        width: 8em; /* Scale logos down for mobile */
+    }
+
+    #dominos, #target, #bp, #atomicObject {
+        width: 6em; /* Adjust smaller logos */
+    }
+
+    #bluemedora, #unionpacific {
+        width: 9em; /* Adjust other logos for mobile */
+        margin-top: 1em;
+    }
+
+    /* Sponsor Thank You Letter adjustments */
+    .sponsor-thank-you {
+        padding: 1em 2em; /* Reduce padding */
+        font-size: 1.1em; /* Adjust font size */
+        text-align: center; /* Center-align text */
+    }
+
+    .sponsor-accord {
+        font-size: 1.8em; /* Reduce font size */
+        padding: 1em 0.5em; /* Adjust padding */
+    }
+
+    /* Become a Sponsor section adjustments */
+    .become-sponsor {
+        padding: 1.5em 2em; /* Reduce padding for mobile */
+        font-size: 1em; /* Adjust font size */
+    }
+
+    .sponsor-interested {
+        font-size: 1.5em; /* Adjust font size for the title */
+        text-align: center; /* Center-align text */
+    }
+
+    .become-sponsor-descr {
+        margin: 0 1.5em; /* Reduce margins for mobile */
+        font-size: 1em; /* Adjust font size */
+        text-align: center; /* Center-align text */
+    }
+
+    .contact-mail {
+        font-size: 1em; /* Adjust font size for mobile */
+        display: block; /* Ensure email link takes up full width */
+        text-align: center; /* Center-align the contact mail */
+    }
 }
 
 /* Outreach */
@@ -803,6 +1020,22 @@ p {
     margin: 0.7em 8em;
 }
 
+/* Media queries for smaller devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .wicbits {
+        padding: 1em 1em 2em; /* Reduce padding on mobile */
+    }
+
+    .wic-bits-info {
+        margin: 0.7em 1em; /* Reduce margins for smaller screens */
+        font-size: 1em;    /* Adjust font size for mobile readability */
+    }
+
+    .wic-bits-title {
+        margin-top: 0.5em; /* Reduce top margin for mobile */
+        font-size: 1.5em;  /* Adjust title size for mobile */
+    }
+}
 /* Past Wic Bits */
 
 .past-wicbits {
@@ -909,7 +1142,38 @@ iframe {
 .google-calendar {
     border-width: 0;
 }
+@media (max-width: 600px) {
+    .events {
+        padding: 6em 2em; /* Reduce padding for mobile */
+    }
 
+    .upcoming-events {
+        margin-bottom: 1em; /* Add extra margin for separation */
+    }
+
+    .calendar-note {
+        font-size: 1.1em; /* Reduce font size for mobile */
+        margin-top: 1em;
+    }
+
+    .calendar {
+        padding: 3em 1.5em; /* Adjust padding for smaller screens */
+    }
+
+    .calendar-title {
+        font-size: 1.5em; /* Reduce title size */
+        margin-bottom: 1em; /* Add some space below the title */
+    }
+
+    iframe {
+        width: 100%; /* Make iframe full width */
+        height: auto; /* Ensure it resizes automatically */
+    }
+
+    .google-calendar {
+        width: 100%; /* Ensure calendar fits in mobile view */
+    }
+}
 /* Alumni */
 
 .alumni {
@@ -983,6 +1247,64 @@ iframe {
 
 .pictures {
     margin-top: 1em;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and mobile) */
+@media (max-width: 768px) {
+    .alumni {
+        padding: 4em 2em 2em; /* Reduce padding for mobile/tablet */
+    }
+
+    .alumni-year {
+        font-size: 1.1em; /* Reduce font size for smaller screens */
+    }
+
+    .alumni-descr {
+        margin: 0 1em 0.6em; /* Reduce margin for mobile/tablet */
+    }
+
+    .years-title {
+        font-size: 1.5em; /* Reduce title size for smaller screens */
+    }
+
+    .alumni-pic {
+        width: 100%; /* Make images responsive */
+        margin: 1em 0; /* Add margin for spacing on smaller screens */
+    }
+
+    .year-links li {
+        font-size: 1em; /* Adjust list font size */
+    }
+
+    .below-years {
+        max-width: 3em; /* Reduce the size of the underline for smaller screens */
+    }
+}
+
+/* For very small screens (max-width: 600px) */
+@media (max-width: 600px) {
+    .alumni {
+        padding: 6em 3em 2em; /* Further reduce padding for mobile */
+    }
+
+    .years-title {
+        font-size: 1.3em; /* Reduce title size further for mobile */
+    }
+
+    .alumni-year, .alumni-eboard-year {
+        font-size: 1em; /* Adjust year font sizes */
+    }
+
+    .alumni-descr {
+        margin: 0 0.5em 0.6em; /* Reduce margin even more */
+        font-size: 0.9em; /* Smaller font for descriptions */
+    }
+
+    .year-links li {
+        font-size: 0.9em; /* Smaller font size for year links */
+    }
 }
 
 /* Join */
@@ -1148,13 +1470,124 @@ footer p {
         text-transform: uppercase;
     }
 
-    /* Home page - about us */
+    /* Join Us Section */
+.join-us {
+    padding: 8em 2em;
+    text-align: center;
+}
 
-    .about {
-        color: var(--dark-green);
-        padding: 0em 0em 0em;
+.join-title {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.join-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.connect-subheading {
+    color: #888;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.join-info {
+    margin: 1.2em 0;
+    font-size: 1.15em;
+}
+
+.btn-spartan {
+    background-color: #18453b;
+    color: white;
+    padding: 0.7em 1.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-spartan:hover {
+    background-color: #c8f2ad;
+    color: #18453b;
+}
+
+.social-join {
+    background-color: #333;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    margin: 0.3em;
+    transition: background-color 0.3s;
+}
+
+.social-join:hover {
+    background-color: #18453b;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .join-title {
+        font-size: 2.5em;
     }
 
+    .join-row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+    }
 
-    
+    .col-sm-6 {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .btn-spartan {
+        font-size: 1.1em;
+        padding: 0.6em 1.2em;
+    }
+
+    .join-info {
+        font-size: 1.1em;
+    }
+
+    .social-join {
+        font-size: 1.3em;
+        width: 1.7em;
+        height: 1.7em;
+    }
+
+    footer {
+        padding: 1.5em 0;
+    }
+}
+
+/* Media Queries for Small Devices (Max Width: 600px) */
+@media (max-width: 600px) {
+    .join-title {
+        font-size: 2em;
+    }
+
+    .btn-spartan {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
+    .join-info {
+        font-size: 1em;
+    }
+
+    .social-join {
+        font-size: 1.1em;
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+ 
 }
